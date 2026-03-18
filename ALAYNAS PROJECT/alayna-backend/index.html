@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alayna Sameer Khan | Cybersecurity Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <div class="nav-logo">ASK<span>://</span>portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#certs">certs</a></li>
+      <li><a href="#projects-section">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">[ Cybersecurity Analyst ]</p>
+      <h1 class="name">
+        Alayna<br>
+        <span class="highlight">Sameer</span><br>
+        Khan
+      </h1>
+      <p class="hero-title typed">Junior Security Analyst</p>
+      <p class="hero-bio">
+        Passionate about protecting digital infrastructure and uncovering vulnerabilities before they become threats. I analyze, defend, and secure systems with precision — one line of code at a time.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="#skills" class="btn btn-ghost">View Skills</a>
+      </div>
+    </div>
+    <div class="glitch-bar">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- SKILLS — populated dynamically from MongoDB -->
+  <section id="skills">
+    <p class="section-label">02 // Expertise</p>
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="skills-grid reveal" id="skills-grid">
+      <!-- Injected by app.js via /api/skills -->
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS — populated dynamically from MongoDB -->
+  <section id="certs">
+    <p class="section-label">03 // Credentials</p>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid reveal" id="certs-grid">
+      <!-- Injected by app.js via /api/certifications -->
+    </div>
+  </section>
+
+  <!-- PROJECTS — populated dynamically from MongoDB -->
+  <section id="projects-section" style="display:none;">
+    <p class="section-label">04 // Work</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Injected by app.js via /api/projects -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div>
+        <p class="section-label">05 // Connect</p>
+        <h2 class="contact-headline">Let's<br>build something<br><em>secure.</em></h2>
+        <p class="contact-text">
+          // Open to opportunities, collaborations,<br>
+          // and conversations about cybersecurity.<br>
+          // Let's connect.
+        </p>
+      </div>
+      <div class="contact-details reveal">
+        <div class="contact-item">
+          <div class="contact-item-icon">@</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">alaynasameerKhan@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">&gt;_</div>
+          <div>
+            <div class="contact-item-label">Status</div>
+            <div class="contact-item-value">Available for opportunities</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">[?]</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Open to Remote & On-site</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-copy">© 2025 Alayna Sameer Khan — All rights reserved</div>
+    <div class="footer-status">
+      <div class="status-dot"></div>
+      System Online
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
