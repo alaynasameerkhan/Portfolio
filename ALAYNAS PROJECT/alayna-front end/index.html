@@ -19,6 +19,7 @@
       <li><a href="#skills">skills</a></li>
       <li><a href="#certs">certs</a></li>
       <li><a href="#contact">contact</a></li>
+      <li><a href="#reach-out">reach out</a></li>
     </ul>
   </nav>
 
@@ -36,7 +37,7 @@
         Passionate about protecting digital infrastructure and uncovering vulnerabilities before they become threats. I analyze, defend, and secure systems with precision — one line of code at a time.
       </p>
       <div class="hero-cta">
-        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="#reach-out" class="btn">Get in Touch</a>
         <a href="#skills" class="btn btn-ghost">View Skills</a>
       </div>
     </div>
@@ -62,7 +63,7 @@
       </div>
       <div class="skill-card">
         <div class="skill-icon">[//]</div>
-        <div class="skill-name">Threat Analysis</div>
+        <div class="skill-name">SOC Analyst</div>
         <div class="skill-desc">Identifying, assessing, and mitigating cybersecurity threats and vulnerabilities</div>
       </div>
       <div class="skill-card">
@@ -96,7 +97,7 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT INFO -->
   <section id="contact">
     <div class="contact-inner">
       <div>
@@ -130,6 +131,98 @@
             <div class="contact-item-value">Open to Remote & On-site</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REACH OUT FORM -->
+  <section id="reach-out">
+    <p class="section-label">05 // Initiate Contact</p>
+    <h2 class="section-title">Send a Message</h2>
+
+    <div class="form-wrapper reveal">
+      <!-- Terminal header bar -->
+      <div class="form-terminal-header">
+        <span class="terminal-dot dot-red"></span>
+        <span class="terminal-dot dot-yellow"></span>
+        <span class="terminal-dot dot-green"></span>
+        <span class="terminal-title">// new_connection.sh</span>
+      </div>
+
+      <div class="form-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">
+              <span class="label-prefix">$</span> your_name
+            </label>
+            <input
+              type="text"
+              id="cf-name"
+              class="form-input"
+              placeholder="John Doe"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">
+              <span class="label-prefix">$</span> your_email
+            </label>
+            <input
+              type="email"
+              id="cf-email"
+              class="form-input"
+              placeholder="you@example.com"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cf-subject">
+            <span class="label-prefix">$</span> subject
+          </label>
+          <div class="select-wrapper">
+            <select id="cf-subject" class="form-input form-select">
+              <option value="" disabled selected>-- select reason --</option>
+              <option value="Job Opportunity">Job Opportunity</option>
+              <option value="Freelance Project">Freelance Project</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Security Consultation">Security Consultation</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="select-arrow">&gt;</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cf-message">
+            <span class="label-prefix">$</span> message
+          </label>
+          <textarea
+            id="cf-message"
+            class="form-input form-textarea"
+            placeholder="// Describe your reason for reaching out..."
+            rows="5"
+          ></textarea>
+          <div class="char-counter"><span id="char-count">0</span> / 500</div>
+        </div>
+
+        <div class="form-actions">
+          <div class="form-status" id="form-status"></div>
+          <button class="btn btn-submit" id="cf-submit" type="button">
+            <span class="btn-text">[ transmit_message ]</span>
+            <span class="btn-loader" id="btn-loader" style="display:none;">[ sending... ]</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Success overlay -->
+      <div class="form-success" id="form-success" style="display:none;">
+        <div class="success-icon">[✓]</div>
+        <div class="success-title">Message Transmitted</div>
+        <div class="success-msg">// Your message has been sent successfully.<br>// I'll respond as soon as possible.</div>
+        <button class="btn btn-ghost" id="form-reset" style="margin-top:2rem;">[ send_another ]</button>
       </div>
     </div>
   </section>
